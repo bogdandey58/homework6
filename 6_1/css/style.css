@@ -1,0 +1,68 @@
+body {
+  margin: 24px 0 72px 24px;
+  padding: 0;
+}
+
+.one .pone {
+  background-color: #00FF0F;
+}
+.one .ptwo:hover {
+  background-color: #E7FF00;
+  cursor: pointer;
+}
+.one .pone:active {
+  background-color: #FF0200;
+}
+.one .ptwo {
+  background-color: #FF0200;
+}
+.one .ptwo:hover {
+  background-color: #7B4122;
+  cursor: pointer;
+}
+.one .ptwo:active {
+  background-color: #E19700;
+}
+
+input:focus {
+  border-color: #00FF0F;
+}
+
+.three p:nth-child(even) {
+  background-color: #848484;
+}
+.three p:first-letter {
+  font-size: 2em;
+  color: #FF0000;
+  font-family: Georgia;
+}
+.three p::after {
+  content: "*";
+  display: block;
+  text-align: center;
+}
+
+.four p::before {
+  content: "\2602";
+}
+.four p:first-letter {
+  font-size: 1.5em;
+  color: #FF0000;
+  font-family: Georgia;
+}
+
+.five {
+  position: relative;
+  width: 45px;
+  height: 20px;
+  background-color: #000;
+  margin-left: 24px;
+  display: inline-block;
+}
+
+.five::before {
+  content: "\25C2";
+  right: 100%;
+  top: -0.985px;
+  position: absolute;
+}
